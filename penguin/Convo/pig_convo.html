@@ -1,46 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Conversations</title>
-        <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-        <link rel="stylesheet" href="../../top/top.css" />
-        <link href="../../panda/Conversation/convo.css" rel="stylesheet" type="text/css" media="screen" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="../../panda/Conversation/convo.js" type="text/javascript"></script>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script>
+<head>
+    <title>Conversations</title>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="../../top/top.css" />
+    <link href="../../panda/Conversation/convo.css" rel="stylesheet" type="text/css" media="screen" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../../panda/Conversation/convo.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
 
         //CONVERSATIONS
 
-        document.addEventListener("DOMContentLoaded", function() {
+        document.addEventListener("DOMContentLoaded", function () {
             var message = new MessageViewer({
                 "data": [{
                     "side_class": "left",
-                    "message":"Hi, I’m <span>Penguin</span>, How are you?"
+                    "message": "Hi, I’m <span>Penguin</span>, How are you?"
                 },
                 {
-                     "side_class": "right",
-                    "message":"Hi Penguin, I’m <span>pig</span>."
+                    "side_class": "right",
+                    "message": "Hi Penguin, I’m <span>pig</span>."
                 },
-                   {
+                {
                     "slide_class": "left",
-                    "message":" Why are you <span>putting mud on your body</span>?"
+                    "message": " Why are you <span>putting mud on your body</span>?"
                 },
                 {
-                     "side_class": "right",
-                    "message":"Oh, this is <span>mud bath</span>!<br><span>To protect from bugs and keep my body clean</span>!"
+                    "side_class": "right",
+                    "message": "Oh, this is <span>mud bath</span>!<br><span>To protect from bugs and keep my body clean</span>!"
                 },
                 {
-                    "message":"Do you want to try?"
+                    "message": "Do you want to try?"
                 },
                 {
                     "side_class": "left",
-                    "message":"I’m a <span>super model</span>.<br>I don’t want my body to get dirty."
+                    "message": "I’m a <span>super model</span>.<br>I don’t want my body to get dirty."
                 },
                 {
-                     "side_class": "right",
-                    "message":"Hahaha."
+                    "side_class": "right",
+                    "message": "Hahaha."
                 }],
                 "option": {
                     "loop": false
@@ -54,22 +54,22 @@
     </script>
 
 
-    </head>
+</head>
 
-    <body>
-        <div class="farm_container">
-        <img src = "../../img/bg/bg.svg"  class="backgroundImage"/>
+<body>
+    <div class="farm_container">
+        <img src="../../img/bg/bg.svg" class="backgroundImage" />
         <a href="../farm/farm.html"><img src="../../img/items/go-back-arrow.svg" id="skip_btn"></a>
-            <div id="skip_convo" class="skip_convo">
-                SKIP CONVERSATION
-            </div>
+        <div id="skip_convo" class="skip_convo">
+            SKIP CONVERSATION
+        </div>
 
         <section id="sample" class="sample001">
 
 
-                <div class="container">
+            <div class="container">
 
-                    <a href="../../penguin/farm/farm.html">
+                <a href="../../penguin/farm/farm.html">
                     <div class="messageView" id="default">
                         <div class="mv-contents">
                             <p class="mv-name"></p>
@@ -79,31 +79,31 @@
                             </div>
                             <p class="mv-image character"></p>
 
-                            <img src="../../img/characters/penguin.svg" id="character" class="animal" />
-                    <img src="../../img/farm_animals/pig.svg" id="farm_animal" class="animal pig" />
+                            <img src="../../img/characters/Penguin.svg" id="character" class="animal" />
+                            <img src="../../img/farm_animals/pig.svg" id="farm_animal" class="animal pig" />
 
                         </div>
                     </div>
-            </a>
+                </a>
             </div>
-            </section>
-        </div>
+        </section>
+    </div>
 
-        <!-- Portrait Screen Alert -->
+    <!-- Portrait Screen Alert -->
 
-      <section class="portrait hidden" id="portrait">
+    <section class="portrait hidden" id="portrait">
         <div class="alert">
-          <img src="../../img/items/BAFlogo.svg" alt="BABY">
-          <h2>Hello! Players!</h2>
-          <p>Thank you for playing BABY ANIMAL FARM!<br>
+            <img src="../../img/items/BAFlogo.svg" alt="BABY">
+            <h2>Hello! Players!</h2>
+            <p>Thank you for playing BABY ANIMAL FARM!<br>
                   If you wish to continue to play BABY ANIMAL FARM, please turn your device sideways!</p>
-          <i class="fa fa-mobile"></i>
+            <i class="fa fa-mobile"></i>
         </div>
-      </section>
+    </section>
 
-      <script src="../../panda/Conversation/convo_general.js"></script>
+    <script src="../../panda/Conversation/convo_general.js"></script>
 
-    </body>
+</body>
 
 
 </html>
