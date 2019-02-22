@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Conversations</title>
+        <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+          <link rel="stylesheet" href="../../top/top.css" />
+        <link href="../../panda/Conversation/convo.css" rel="stylesheet" type="text/css" media="screen" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="../../panda/Conversation/convo.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+
+        //CONVERSATIONS
+
+        document.addEventListener("DOMContentLoaded", function() {
+            var message = new MessageViewer({
+                "data": [{
+                    "side_class": "left",
+                    "message":"Hello, I am <span>Lion</span>...  How are you?"
+                },
+                {
+                     "side_class": "right",
+                    "message":"I’m fine thank you.<br>Sorry I’m busy because I need to <span>feed<span> my babies."
+                },
+                   {
+                    "slide_class": "left",
+                    "message":"Oh, sorry to bother you.<br>By the way, what are you and your babies going to eat? "
+                },
+                {
+                     "side_class": "right",
+                    "message":"Basically, we eat food <span>made by human</span>.<br>But it’s depend on farm."
+                },
+                {
+                    "message":"In our case. we eat <span>pellets</span>.<br>Pellets are <span>common food</span> for chicken."
+                },
+                {
+                    "message":"Do you want to have some?"
+                },
+                {
+                    "slide_class": "left",
+                    "message":"Oh thanks."
+                }],
+                "option": {
+                    "loop": false
+                }
+            });
+        }, false);
+
+
+
+
+    </script>
+
+
+    </head>
+
+    <body>
+        <div class="farm_container">
+        <img src = "../../img/bg/bg.svg"  class="backgroundImage"/>
+        <img src = "../../img/bg/bg.svg"  class="backgroundImage"/>
+        <a href="../farm/farm.html"><img src="../../img/items/go-back-arrow.svg" id="skip_btn"></a>
+            <div id="skip_convo" class="skip_convo">
+                SKIP CONVERSATION
+            </div>
+
+        <section id="sample" class="sample001">
+
+
+                <div class="container">
+
+                    <a href="../../lion/farm/farm.html">
+                    <div class="messageView" id="default">
+                        <div class="mv-contents">
+                            <p class="mv-name"></p>
+                            <div class="mv-comment">
+                                <p class="val"></p>
+                                <p id="next" class="pointer"></p>
+                            </div>
+                            <p class="mv-image character"></p>
+
+                            <img src="../../img/characters/lion.svg" id="character" class="animal" />
+                    <img src="../../img/farm_animals/chicken.svg" id="farm_animal" class="animal chicken" />
+
+                        </div>
+                    </div>
+            </a>
+            </div>
+            </section>
+        </div>
+
+        <!-- Portrait Screen Alert -->
+
+        <section class="portrait hidden" id="portrait">
+          <div class="alert">
+            <img src="../../img/items/BAFlogo.svg" alt="BABY">
+            <h2>Hello! Players!</h2>
+            <p>Thank you for playing BABY ANIMAL FARM!<br>
+                    If you wish to continue to play BABY ANIMAL FARM, please turn your device sideways!</p>
+            <i class="fa fa-mobile"></i>
+          </div>
+        </section>
+
+        <script src="../../panda/Conversation/convo_general.js"></script>
+
+
+    </body>
+
+
+</html>

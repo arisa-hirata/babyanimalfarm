@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>YOU LOST</title>
+        <link href="../../panda/Lost/lost.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="../../top/top.css" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Coiny" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>
+
+    <body>
+
+        <div class="farm_container">
+        <div class="container">
+        <h1 id="lost"> You Lost
+        </h1>
+
+        <img src="../../img/characters/cry_lion.svg" class="cry_animal"/>
+        <img src="../../img/items/tear/tearLB.svg" class="tearB tearL">
+        <img src="../../img/items/tear/tearRB.svg" class="tearB tearR">
+        <img src="../../img/items/tear/tearLS.svg" class="tearS tearL">
+        <img src="../../img/items/tear/tearRS.svg" class="tearS tearR">
+
+        <div class="btn_container">
+            <a href="../../top/top.html"><div class="lost_btn">TOP PAGE</div></a>
+            <a href="../quiz/quiz.html"><div class="lost_btn">RETRY QUIZ</div></a>
+        </div>
+
+        </div>
+        </div>
+
+
+        <!-- Portrait Screen Alert -->
+
+  <section class="portrait hidden" id="portrait">
+    <div class="alert">
+      <img src="../../img/items/BAFlogo.svg" alt="BABY">
+      <h2>Hello! Players!</h2>
+      <p>Thank you for playing BABY ANIMAL FARM!<br>
+              If you wish to continue to play BABY ANIMAL FARM, please turn your device sideways!</p>
+      <i class="fa fa-mobile"></i>
+    </div>
+  </section>
+
+    </body>
+    <script>
+
+    // <!-- Portrait Screen Alert -->
+      var portScreen = document.getElementById("portrait");
+
+      if (window.innerHeight > window.innerWidth) {
+          portScreen.classList.remove("hidden");
+      }
+
+      $(window).on("orientationchange", function (event) {
+          $("#portrait").toggleClass("hidden");
+      });
+
+    </script>
+
+    </body>
+
+</html>
