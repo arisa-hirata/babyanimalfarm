@@ -188,6 +188,14 @@ h1 span:nth-child(11) {
     z-index: -1;
 }
 
+.web{
+  display: block;
+}
+
+.responsive{
+  display:none;
+}
+
 @keyframes floating {
     0%{opacity:0.5}
     100%{opacity:1}
@@ -278,6 +286,14 @@ h2 {
         height: 25px;
         font-size: 1em;
         bottom: -155%;
+    }
+
+    .web{
+      display: none;
+    }
+
+    .responsive{
+      display: block;
     }
 
     h2 {

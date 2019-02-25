@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>BABY ANIMAL FARM</title>
-        <link rel="stylesheet" href="top.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://fonts.googleapis.com/css?family=Coiny|Quicksand" rel="stylesheet">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    </head>
+<head>
+    <title>BABY ANIMAL FARM</title>
+    <link rel="stylesheet" href="top.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Coiny|Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
 
-    <body>
+<body>
 
-        <div class="farm_container">
-        <img src = "../img/bg/bg.svg"  class="backgroundImage"/>
+    <div class="farm_container">
+        <img src="../img/bg/bg.svg" class="backgroundImage" />
 
 
         <img src="../img/items/title_logo2.svg" id="title" class="title">
@@ -35,18 +35,22 @@
         <img src="../img/characters/title_animal.svg" class="characters" />
 
 
-           <div id="start" class="btn start">START</div>
+        <div id="start" class="btn start web">START</div>
+
+        <a href="../select/select.html">
+            <div id="start" class="btn start responsive">START</div>
+        </a>
 
 
 
 
-          <div id="story">
+        <div id="story">
 
             <div class="story_container">
 
-              <h2>Welcome to BABY ANIMAL FARM!</h2>
+                <h2>Welcome to BABY ANIMAL FARM!</h2>
 
-              <p class="story">
+                <p class="story">
                 This is BABY ANIMAL FARM.<br>
                 In this farm, lovely baby animals live happily.<br>
                  One day, 3 different animal babies; panda, lion and penguin, are coming.<br>
@@ -56,59 +60,59 @@
 
               </p>
 
-              <a href="../select/select.html">
-                <div id="begin" class="btn">Begin</div>
-              </a>
+                <a href="../select/select.html">
+                    <div id="begin" class="btn">Begin</div>
+                </a>
 
             </div>
 
-          </div>
-
         </div>
 
+    </div>
 
-        <!-- Portrait Screen Alert -->
 
-		<section class="portrait hidden" id="portrait">
-			<div class="alert">
-				<img src="../img/items/BAFlogo.svg" alt="BABY">
-				<h2>Hello! Players!</h2>
-				<p>Thank you for playing BABY ANIMAL FARM!<br>
+    <!-- Portrait Screen Alert -->
+
+    <section class="portrait hidden" id="portrait">
+        <div class="alert">
+            <img src="../img/items/BAFlogo.svg" alt="BABY">
+            <h2>Hello! Players!</h2>
+            <p>Thank you for playing BABY ANIMAL FARM!<br>
                 If you wish to continue to play BABY ANIMAL FARM, please turn your device sideways!</p>
-				<i class="fa fa-mobile"></i>
-			</div>
-		</section>
+            <i class="fa fa-mobile"></i>
+        </div>
+    </section>
 
-        <script src="top.js"></script>
+    <script src="top.js"></script>
 
-        <script>
+    <script>
 
-            const Story = document.getElementById("story");
+        const Story = document.getElementById("story");
 
-            document.getElementById("start").onclick = function() {
-              Story.classList.add("fadein");
-                setTimeout(function() {
-                  Story.style.display = "block";
-                }, 200);
-            };
+        document.getElementById("start").onclick = function () {
+            Story.classList.add("fadein");
+            setTimeout(function () {
+                Story.style.display = "block";
+            }, 200);
+        };
 
-            var portScreen = document.getElementById("portrait");
+        var portScreen = document.getElementById("portrait");
 
-            if (window.innerHeight > window.innerWidth) {
-                portScreen.classList.remove("hidden");
-            }
+        if (window.innerHeight > window.innerWidth) {
+            portScreen.classList.remove("hidden");
+        }
 
-            $(window).on("orientationchange", function (event) {
-                $("#portrait").toggleClass("hidden");
-            });
-
-
-        </script>
+        $(window).on("orientationchange", function (event) {
+            $("#portrait").toggleClass("hidden");
+        });
 
 
+    </script>
 
 
 
-    </body>
+
+
+</body>
 
 </html>
